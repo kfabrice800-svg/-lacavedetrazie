@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Cave de Trazie — Wine Boutique & Lounge</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#111;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#fff;min-height:100vh}
+  .wrap{max-width:420px;margin:0 auto;padding:24px 16px 40px}
+  .or{color:#C9A84C}
+  a{text-decoration:none}
+
+  /* HEADER */
+  .header{text-align:center;padding:28px 0 20px}
+  .logo-circle{width:70px;height:70px;border-radius:50%;border:2px solid #C9A84C;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;background:#1C1C1C}
+  .logo-circle span{font-size:20px;font-weight:700;color:#C9A84C}
+  .header h1{font-size:22px;font-weight:700;color:#C9A84C;letter-spacing:3px}
+  .header p.sub{font-size:12px;color:#888;margin-top:5px;letter-spacing:1px}
+  .header p.addr{font-size:12px;color:#555;margin-top:8px}
+  .pill{display:inline-block;background:#C9A84C22;color:#C9A84C;font-size:11px;padding:4px 14px;border-radius:20px;border:1px solid #C9A84C44;margin-top:10px}
+
+  /* DIVIDER */
+  .div{height:1px;background:#222;margin:20px 0}
+
+  /* SECTION TITLE */
+  .stitle{font-size:10px;font-weight:600;color:#555;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+
+  /* MAIN BUTTON */
+  .btn-main{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:14px;background:#C9A84C;color:#1C1C1C;font-size:15px;font-weight:700;margin-bottom:10px;width:100%}
+  .btn-main:active{opacity:0.85}
+
+  /* REGULAR BUTTON */
+  .btn{display:flex;align-items:center;gap:12px;padding:14px 18px;border-radius:14px;background:#1C1C1C;border:1px solid #2A2A2A;color:#E0E0E0;font-size:14px;font-weight:500;margin-bottom:10px;width:100%}
+  .btn:active{background:#222}
+  .btn-icon{width:36px;height:36px;border-radius:10px;background:#C9A84C22;border:1px solid #C9A84C44;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#C9A84C;flex-shrink:0}
+  .btn-texts{display:flex;flex-direction:column}
+  .btn-label{font-size:13px;font-weight:600}
+  .btn-desc{font-size:11px;color:#666;margin-top:2px}
+
+  /* EVENTS */
+  .event{background:#1C1C1C;border:1px solid #C9A84C22;border-radius:14px;padding:16px;margin-bottom:10px}
+  .event-top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+  .event-dot{width:8px;height:8px;border-radius:50%;background:#C9A84C;flex-shrink:0}
+  .event-day{font-size:11px;color:#C9A84C;font-weight:600;letter-spacing:1px}
+  .event-title{font-size:15px;color:#F0F0F0;font-weight:600}
+  .event-sub{font-size:12px;color:#666;margin-top:4px}
+  .event-time{display:inline-block;background:#C9A84C15;color:#C9A84C;font-size:11px;padding:3px 10px;border-radius:20px;margin-top:8px}
+
+  /* MENU */
+  .menu-box{background:#1C1C1C;border-radius:14px;padding:16px;border:1px solid #222}
+  .menu-cat{font-size:11px;color:#C9A84C;font-weight:600;letter-spacing:1.5px;padding-bottom:8px;border-bottom:1px solid #2A2A2A;margin-bottom:10px;margin-top:16px}
+  .menu-cat:first-child{margin-top:0}
+  .menu-row{display:flex;justify-content:space-between;align-items:baseline;padding:6px 0;border-bottom:1px solid #1E1E1E}
+  .menu-row:last-child{border-bottom:none}
+  .menu-item{font-size:13px;color:#CCC}
+  .menu-price{font-size:13px;color:#C9A84C;font-weight:600;white-space:nowrap;padding-left:8px}
+
+  /* SOCIAL */
+  .social-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .social-btn{display:flex;align-items:center;gap:10px;padding:14px;border-radius:12px;background:#1C1C1C;border:1px solid #2A2A2A;color:#E0E0E0;font-size:13px;font-weight:500}
+  .social-btn:active{background:#222}
+  .s-icon{width:32px;height:32px;border-radius:8px;background:#C9A84C22;border:1px solid #C9A84C44;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:#C9A84C;flex-shrink:0}
+
+  /* FOOTER */
+  .footer{text-align:center;padding:24px 0 8px}
+  .footer p{font-size:12px;color:#333;font-style:italic}
+  .footer p.copy{font-size:10px;color:#2A2A2A;margin-top:8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="logo-circle"><span>CDT</span></div>
+    <h1>LA CAVE DE TRAZIE</h1>
+    <p class="sub">WINE BOUTIQUE &amp; LOUNGE</p>
+    <p class="addr">Riviera M'badon, Abidjan</p>
+    <span class="pill">Ouvert tous les jours</span>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- LIENS RAPIDES -->
+  <p class="stitle">Accès rapide</p>
+
+  <a href="https://heyzine.com/flip-book/ebeaf9b8ec.html" class="btn-main">
+    <div class="btn-icon" style="background:#1C1C1C;border-color:#1C1C1C">🍷</div>
+    <div class="btn-texts">
+      <span class="btn-label">Catalogue des vins</span>
+      <span style="font-size:11px;color:#7A5A10;margin-top:2px">Voir notre sélection complète</span>
+    </div>
+  </a>
+
+  <a href="https://maps.app.goo.gl/HYgYgVbJoSkKSm8GA" class="btn">
+    <div class="btn-icon">📍</div>
+    <div class="btn-texts">
+      <span class="btn-label">Nous trouver</span>
+      <span class="btn-desc">Riviera M'badon, Abidjan</span>
+    </div>
+  </a>
+
+  <a href="tel:+2250704782929" class="btn">
+    <div class="btn-icon">📞</div>
+    <div class="btn-texts">
+      <span class="btn-label">Nous appeler</span>
+      <span class="btn-desc">+225 07 04 782 929</span>
+    </div>
+  </a>
+
+  <div class="div"></div>
+
+  <!-- SOIREES -->
+  <p class="stitle">Agenda des soirées</p>
+
+  <div class="event">
+    <div class="event-top">
+      <div class="event-dot"></div>
+      <span class="event-day">MARDI &amp; MERCREDI</span>
+    </div>
+    <div class="event-title">Soirée Karaoké</div>
+    <div class="event-sub">Micro ouvert à tous les clients</div>
+    <span class="event-time">Dès 20h00</span>
+  </div>
+
+  <div class="event">
+    <div class="event-top">
+      <div class="event-dot"></div>
+      <span class="event-day">JEUDI</span>
+    </div>
+    <div class="event-title">Soirée Kompa &amp; Zouk</div>
+    <div class="event-sub">En live avec le groupe Sunshine</div>
+    <span class="event-time">Dès 20h00</span>
+  </div>
+
+  <div class="div"></div>
+
+  <!-- MENU -->
+  <p class="stitle">Menu Food</p>
+  <div class="menu-box">
+
+    <div class="menu-cat">Plats / Viandes</div>
+    <div class="menu-row"><span class="menu-item">Poulet entier</span><span class="menu-price">9 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">1/2 Poulet</span><span class="menu-price">5 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">1/2 Poulet sauté</span><span class="menu-price">5 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Pilon + accompagnement</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Haut de cuisse + acc.</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Ailes de poulet + acc.</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Côte de porc</span><span class="menu-price">6 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Travers de porc</span><span class="menu-price">6 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Caille</span><span class="menu-price">6 000 F</span></div>
+
+    <div class="menu-cat">Plats / Poissons</div>
+    <div class="menu-row"><span class="menu-item">Poisson Sosso</span><span class="menu-price">8 000 / 10 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Capitaine</span><span class="menu-price">selon arrivage</span></div>
+    <div class="menu-row"><span class="menu-item">Filet de mérou</span><span class="menu-price">15 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Filet mérou Picasso</span><span class="menu-price">12 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Soupe de poisson</span><span class="menu-price">15 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Garba thon rouge</span><span class="menu-price">3 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Garba thon blanc</span><span class="menu-price">3 500 F</span></div>
+
+    <div class="menu-cat">Plats / Brochettes</div>
+    <div class="menu-row"><span class="menu-item">Filet de boeuf</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Poulet</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Brochette de gésier</span><span class="menu-price">2 500 F</span></div>
+    <div class="menu-row"><span class="menu-item">Mérou picasso</span><span class="menu-price">6 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Poisson bar</span><span class="menu-price">6 000 F</span></div>
+
+    <div class="menu-cat">Garnitures</div>
+    <div class="menu-row"><span class="menu-item">Attiéké / Alloco / Igname</span><span class="menu-price">1 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Pomme de terre</span><span class="menu-price">1 000 F</span></div>
+    <div class="menu-row"><span class="menu-item">Alloco + oeuf</span><span class="menu-price">2 000 F</span></div>
+
+  </div>
+
+  <div class="div"></div>
+
+  <!-- RESEAUX SOCIAUX -->
+  <p class="stitle">Nous suivre</p>
+  <div class="social-grid">
+    <a href="https://www.instagram.com/lacavedetrazie.abidjan" class="social-btn">
+      <div class="s-icon">IG</div>Instagram
+    </a>
+    <a href="https://www.facebook.com/share/19c2oNaLNr" class="social-btn">
+      <div class="s-icon">FB</div>Facebook
+    </a>
+    <a href="https://www.tiktok.com/@lacavedetrazie" class="social-btn">
+      <div class="s-icon">TK</div>TikTok
+    </a>
+    <a href="https://wa.me/2250704782929" class="social-btn">
+      <div class="s-icon">WA</div>WhatsApp
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>"Si vous l'avez aimé, alors revenez."</p>
+    <p class="copy">La Cave de Trazie — Riviera M'badon, Abidjan</p>
+  </div>
+
+</div>
+</body>
+</html>
